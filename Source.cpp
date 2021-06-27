@@ -6,17 +6,17 @@ int opred(int m[3][3]) {
 }
 
 int main() {
-	setlocale(LC_ALL, "Rus");
+	setlocale(LC_ALL, "ru");
 
 	int m[3][3];
 
 	for (int i = 0; i < 3; i++) {
-		cout << "Çàïîëíèòå " << i + 1 << " ñòðîêó ìàòðèöû: ";
+		cout << "Ð—Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚Ðµ " << i + 1 << " ÑÑ‚Ñ€Ð¾ÐºÑƒ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹: ";
 		for (int j = 0; j < 3; j++)
 			cin >> m[i][j];
 	}
 
 	int result = opred(m);
-	cout << "Îïðåäåëèòåëü ìàòðèöû: " << result;
+	cout << "ÐžÐ¿Ñ€ÐµÐ´ÐµÐ»Ð¸Ñ‚ÐµÐ»ÑŒ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹: " << result;
 	return 0;
 }
